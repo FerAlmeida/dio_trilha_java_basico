@@ -18,7 +18,7 @@ public class AboutMe {
    A execução desta didática é mostrar o funcionamento do JAVA diretamente no terminal e a forma que se é possível
 fazer as configurações e a sua execução diretamente no terminal.
    Foi localizado arquivo em que se encontava o nosso programa, selecionamos a pasta "bin", e abrir pelo terminal
-   Após abrir o terminal na sequência: 
+   Após abrir o terminal na sequência do caminho: 
 PS F:\1. ESTUDOS\4. J A V A  por DIO\dio_trilha_java_basico\JAVA-TERMINAL\Minha-Classe\bin>  digitamos:
       java AboutMe                  -> e a sequência de dados que desejamos acrescentar somente com espaço-> 
       Fernando Almeida 50 1.73
