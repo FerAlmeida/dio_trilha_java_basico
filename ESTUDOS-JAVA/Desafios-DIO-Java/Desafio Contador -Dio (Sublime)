@@ -1,0 +1,33 @@
+import java.security.InvalidParameterException;
+import java.util.Scanner;
+
+public class DesafioContador {
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Digite o primeiro parâmetro: ");
+		int parametro1 = scan.nextInt();
+
+		System.out.print("Digite o segundo parâmetro: ");
+		int parametro2 = scan.nextInt();
+		
+		try {
+			contar(parametro1, parametro2);
+		} catch (InvalidParameterException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+	// Exceção lançada para verificação dos parâmetros, sendo que o primeiro parâmetro não pode ser maior do que o segundo.
+	static void contar(int parametro1, int parametro2 ) throws InvalidParameterException {
+		
+		if(parametro1 > parametro2) {
+			throw new InvalidParameterException("O segundo parâmetro deve ser maior que o primeiro.");
+		}
+		
+		//Impressão da contagem dos parâmetros que foram digitados
+		int contagem = parametro2 - parametro1;
+		for(int i=1; i <= contagem; i++) {
+			System.out.println("Imprimindo o número " + i);
+		}
+	}
+}
